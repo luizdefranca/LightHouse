@@ -15,6 +15,14 @@ int main(int argc, const char * argv[]) {
         
         NSMutableArray *mutableSports = [[NSMutableArray alloc] initWithArray:sports];
         
+        NSLog(@"Number of sports before a sport removed: %lu", (unsigned long)[mutableSports count]);
+        NSString *temporarySport = [mutableSports lastObject];
+        NSLog(@"Removed sport: %@", temporarySport);
+        [mutableSports removeLastObject];
+        NSLog(@"Number of sports after a sport removed: %lu", (unsigned long)[mutableSports count]);
+        [mutableSports insertObject: temporarySport atIndex:0];
+        NSLog(@"Sport at index 0: %@ - number of elements: %lu", mutableSports[0], [mutableSports count]);
+        
         
         
     }
