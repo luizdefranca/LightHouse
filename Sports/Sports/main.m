@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSArray *sports = @[@"Football tennis", @"Footvolley", @"Soccer", @"Tennis", @"Volleyball", @"Basketball", @"Surfing", @"Rock climbing" ];
+        NSArray *sports = @[@"Football", @"Footvolley", @"Soccer", @"Tennis", @"Volleyball", @"Basketball", @"Surfing", @"Skiing" ];
         NSLog(@"Second sport: %@", sports[2]);
         
         NSMutableArray *mutableSports = [[NSMutableArray alloc] initWithArray:sports];
@@ -28,6 +28,12 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Element %lu - %@", elementNumber, sport);
         }
         
+        NSDictionary *sportEmojis = @{@"Football": @"🏈", @"Footvolley": @"🦶", @"Soccer": @"⚽️", @"Tennis": @"🎾", @"Volleyball": @"🏐", @"Basketball": @"🏀", @"Surfing": @"🏄‍♀️", @"Skiing": @"⛷"};
+
+        for (NSString *key in [sportEmojis allKeys]) {
+            NSString *value = sportEmojis[key];
+            NSLog(@"Key: %@ - Value: %@", key, value);
+        }
         
         
     }
