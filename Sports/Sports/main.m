@@ -10,8 +10,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSArray *sports = @[@"Football tennis", @"Footvolley", @"Soccer", @"Tennis", @"Volleyball", @"Basketball", @"Surfing", @"Rock climbing" ];
+        NSLog(@"Second sport: %@", sports[2]);
+        
+       
+        
+        
+        
     }
     return 0;
 }
