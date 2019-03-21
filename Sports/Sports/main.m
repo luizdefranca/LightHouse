@@ -21,7 +21,12 @@ int main(int argc, const char * argv[]) {
         [mutableSports removeLastObject];
         NSLog(@"Number of sports after a sport removed: %lu", (unsigned long)[mutableSports count]);
         [mutableSports insertObject: temporarySport atIndex:0];
-        NSLog(@"Sport at index 0: %@ - number of elements: %lu", mutableSports[0], [mutableSports count]);
+        NSLog(@"First element of sports: %@ - number of elements: %lu", mutableSports[0], [mutableSports count]);
+        
+        for (NSString *sport in mutableSports) {
+            unsigned long elementNumber =(unsigned long)[mutableSports indexOfObject:sport] + 1;
+            NSLog(@"Element %lu - %@", elementNumber, sport);
+        }
         
         
         
