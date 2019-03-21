@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
         NSArray *sports = @[@"Football tennis", @"Footvolley", @"Soccer", @"Tennis", @"Volleyball", @"Basketball", @"Surfing", @"Rock climbing" ];
         NSLog(@"Second sport: %@", sports[2]);
         
-       
+        NSMutableArray *mutableSports = [[NSMutableArray alloc] initWithArray:sports];
         
         
         
