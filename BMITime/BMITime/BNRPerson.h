@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
     //BNRPesron has two variables
     @private float _heightInMeters;
     @private int _weightInKilos;
+    
+    //eyeColor
+    NSString *_eyeColor;
 }
 
 //BNRPerson has method to read and set its instances variables
@@ -23,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 -(void) setHeightInMeters: (float) h;
 -(int) weightInKilos;
 -(void) setWeightInKilos: (int) w;
+
+//eyeColor - Getter and Setter
+-(NSString*) eyeColor;
+-(void) setEyeColor: (NSString*) eyeColor;
 
 //BNRPerson has a method that calculates the Body Mass Index
 -(float) bodyMassIndex;

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRPerson.h"
+#import "Maid.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //Create an instance of BNRPerson;
@@ -26,7 +28,17 @@ int main(int argc, const char * argv[]) {
         float bmi = [mikey bodyMassIndex];
         NSLog(@"Mikey has a BMI of %.2f", bmi);
         
+        //Creating a new instance of BNRPerson and seting the eye color
         
+        BNRPerson *peter = [[BNRPerson alloc]init];
+        peter.eyeColor = @"blue";
+        
+        NSLog(@"Peter has %@ eyes", peter.eyeColor);
+        
+        //Creating a instance of Maid
+        Maid *christine = [[Maid alloc]init];
+        christine.cleaningBill = 100;
+        NSLog(@"%i", christine.cleaningBill);
     }
     return 0;
 }

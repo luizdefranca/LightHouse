@@ -9,6 +9,18 @@
 #import "ArrayUtility.h"
 
 @implementation ArrayUtility
+static NSString *_someString = nil;
++ (NSString *)someString
+{
+    return _someString;
+    
+}
++ (void)setSomeString:(NSString *)newString
+{
+    _someString = newString;
+    
+}
+
 -(NSNumber*) largestNumber: (NSArray *) numbers
 {
     NSNumber *maxValue =  @INT_MIN ;

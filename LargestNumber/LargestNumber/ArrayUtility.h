@@ -11,9 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ArrayUtility : NSObject
+@property(class, nonatomic) int number;
 -(NSNumber*) largestNumber: (NSArray *) numbers;
 -(NSNumber*) smallestNumber: (NSArray *) numbers;
 -(NSNumber*) medianNumber: (NSArray*) numbers;
+
 @end
 
 NS_ASSUME_NONNULL_END

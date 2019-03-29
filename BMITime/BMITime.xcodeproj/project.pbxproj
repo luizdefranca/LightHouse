@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		25ABD2C7224A904D00120B1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD2C6224A904D00120B1B /* main.m */; };
 		25ABD2CF224A906900120B1B /* BNRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 25ABD2CE224A906900120B1B /* BNRPerson.m */; };
+		25AE4A07224DEF4C008B8666 /* Maid.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AE4A06224DEF4C008B8666 /* Maid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		25ABD2C6224A904D00120B1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25ABD2CD224A906900120B1B /* BNRPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPerson.h; sourceTree = "<group>"; };
 		25ABD2CE224A906900120B1B /* BNRPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPerson.m; sourceTree = "<group>"; };
+		25AE4A05224DEF4C008B8666 /* Maid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maid.h; sourceTree = "<group>"; };
+		25AE4A06224DEF4C008B8666 /* Maid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Maid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				25ABD2C6224A904D00120B1B /* main.m */,
 				25ABD2CD224A906900120B1B /* BNRPerson.h */,
+				25AE4A05224DEF4C008B8666 /* Maid.h */,
+				25AE4A06224DEF4C008B8666 /* Maid.m */,
 				25ABD2CE224A906900120B1B /* BNRPerson.m */,
 			);
 			path = BMITime;
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AE4A07224DEF4C008B8666 /* Maid.m in Sources */,
 				25ABD2C7224A904D00120B1B /* main.m in Sources */,
 				25ABD2CF224A906900120B1B /* BNRPerson.m in Sources */,
 			);

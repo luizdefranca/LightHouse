@@ -10,6 +10,7 @@
 
 @implementation BNRPerson
 
+//Getter and Setters
 -(float) heightInMeters
 {
     return _heightInMeters;
@@ -26,6 +27,17 @@
 {
     _weightInKilos = w;
 };
+
+//eyeColor - Getter and Setter
+-(NSString*) eyeColor{
+    return _eyeColor;
+};
+-(void) setEyeColor: (NSString*) eyeColor{
+    _eyeColor = eyeColor;
+};
+
+
+//Methods
 -(float) bodyMassIndex
 {
 //    return _weightInKilos/_heightInMeters * _heightInMeters;
