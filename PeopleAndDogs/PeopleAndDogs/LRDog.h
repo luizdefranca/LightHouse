@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LRDog : NSObject
 //Properties
-@property (nonatomic, strong) NSString *name;
+@property (nonatomic, copy) NSString *name;
 
 -(void) speak;
 

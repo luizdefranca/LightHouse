@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LRPerson : NSObject
 
-@property NSString *name;
-@property LRDog *pet;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic)LRDog *pet;
+@property (readonly) NSDate* dateOfBirth;
+
+- (instancetype)initWithName: (NSString*) name andPet: (LRDog*) pet;
 @end
 
 NS_ASSUME_NONNULL_END
