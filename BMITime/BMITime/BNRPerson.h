@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *_eyeColor;
 }
 
+
 //BNRPerson has method to read and set its instances variables
 
 -(float) heightInMeters;
